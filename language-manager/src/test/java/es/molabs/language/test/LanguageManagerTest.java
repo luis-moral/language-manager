@@ -44,9 +44,9 @@ public class LanguageManagerTest
 		{
 			languageManager.getLocalizedKey("test.key.1", LOCALE_EN);
 		}
-		catch (Throwable t)
+		catch (Exception e)
 		{
-			exception = t;
+			exception = e;
 		}
 		Assert.assertEquals("Value must be [" + true + "].", true, exception.getClass() == IllegalStateException.class);
 		
@@ -69,9 +69,9 @@ public class LanguageManagerTest
 		{
 			languageManager.getLocalizedKey("test.key.1", LOCALE_EN);
 		}
-		catch (Throwable t)
+		catch (Exception e)
 		{
-			exception = t;
+			exception = e;
 		}
 		Assert.assertEquals("Value must be [" + true + "].", true, exception.getClass() == IllegalStateException.class);
 		
